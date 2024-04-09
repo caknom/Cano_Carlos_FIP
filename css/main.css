@@ -1,7 +1,7 @@
 /*
 Couples Resort Responsive Build
 4 column grid as per XD file
- */
+*/
 
 /* 
     CSS Guide 
@@ -16,8 +16,13 @@ Couples Resort Responsive Build
     8.  Footer 
  */
 
+/* INDEX.HTML */
 
- /* 1. ---General Styles--- */
+* {
+   /* outline: 1px red solid; */
+}
+
+/* 1. ---General Styles--- */
 
  #mobile-outline {
    outline: 20px solid #333;
@@ -36,7 +41,7 @@ a {
    transition: all .5s ease-in-out;
 }
 
-input, textarea {
+input, button, textarea {
    display: block;
    margin: 0;
    padding: 0;
@@ -51,7 +56,6 @@ input, textarea {
    border-top: solid 3px #CF6666;
    padding-top: 20px;
 }
-
 
 /* 2. ---Main Nav--- */
 
@@ -90,12 +94,17 @@ input, textarea {
    padding: 10px 0 10px 0;
    text-align: center;
    color: #626262;
+   transition: background-color 0s;
+}
+
+#main-nav ul li a:hover {
+   background-color: #9a2018;
+   color: #fff;
 }
 
 #main-nav ul li {
    border-bottom: 1px solid #efefef;
 }
-
 
 
 #main-nav ul li:first-child {
@@ -107,16 +116,19 @@ input, textarea {
 } 
 
 
-
 #logo {
    margin-bottom: 20px;
    max-width: 382px;
 }
 
+header img:hover {
+   transform: scale(1.01);
+}
+
 
 /* 3. ---Main Hero Image--- */
 
-#hero {
+#index-hero {
    background: url(../images/hero-main.jpg) no-repeat;
    height: 200px;
 }
@@ -255,8 +267,9 @@ input, textarea {
 
 #why-choose-us-bottom-nav ol {
    list-style-type: none;
-   margin: 0 0 0 20px;
+   margin: 0 auto;
    padding: 0;
+   text-align: center;
 }
 
 #why-choose-us-bottom-nav ol li {
@@ -264,7 +277,7 @@ input, textarea {
 }
 
 #why-choose-us-bottom-nav ol li a {
-   padding: 5px;
+   padding: 10px;
    color: #fff;
 }
 
@@ -344,8 +357,16 @@ input, textarea {
 
 /* 7. ---Contact--- */
 
+#contact-msg {
+   background-color: #CF6666;
+   color: #fff;
+   font-size: 13px;
+   padding: 40px 15px;
+   text-align: center;
+}
+
 #contact-hero-con {
-   background: url(../images/contact-hero.jpg) no-repeat;
+   background: url(../images/contact-hero.jpg);
    height: 195px;
 }
 
@@ -372,14 +393,12 @@ input, textarea {
    margin-bottom: 25px;
 }
 
-
-
 #contact-hero-form form {
    display: flex;
    flex-direction: column;
 }
 
-#contact-hero-form input, textarea {
+#contact-hero-form input, #contact-hero-form button, textarea {
    padding: 22px;
    border: 2px solid #d6d6d6;
    background-color: #f7f7f7;
@@ -389,27 +408,101 @@ input, textarea {
    width: auto;
 }
 
+#contact-hero-form input, #contact-hero-form textarea {
+   outline-color: #9a2018;
+}
+
 #contact-hero-form textarea {
    height: 250px;
 }
 
-
-
-#contact-hero-form input[type="submit"] {
+#contact-hero-form button {
    padding: 12px 28px;
    background: #9a2018;
    color: #fff;
    border: none;
-   transition: all 200ms ease-in;
+   transition: all 300ms ease-in;
    width: 150px;
    align-self: flex-end;
 }
 
-#contact-hero-form input[type="submit"]:hover {
-   background-color: #626262;
-   border-radius: 0;
+#contact-hero-form button::after {
+   content: "Send";
 }
 
+#contact-hero-form button:hover {
+   background-color: #626262;
+   border-radius: 0;
+   opacity: 20%;
+}
+
+#contact-hero-form form:valid button {
+   width: 382px;
+   cursor: pointer;
+   animation: float 2s ease-out infinite;
+}
+
+@keyframes float {
+   20% {transform: scale(1);}
+   26% {transform: scale(1.04);}
+   32% {transform: scale(1);}
+   38% {transform: scale(1.04);}
+   44% {transform: scale(1);}
+}
+
+#contact-hero-form form:valid button::after {
+   content: "Send some love 💕";
+}
+
+#contact-hero-form form:valid button:hover {
+   background-color: #9a2018;
+   color: #CF6666;
+   opacity: 100%;
+   border-radius: 5px;
+}
+
+#contact-hero-form form:valid button:active::after {
+   color: #fff;
+   content: "Sending love 💕💕💕";
+   border-radius: 5px;
+}
+
+.lightbox:target {
+   display: block;
+}
+
+.lightbox {
+   display: none;
+   position: fixed;
+   top: 0%;
+   left: 50%;
+   margin: 0 0 0 -208px;
+   padding: 16px;
+   width: 100%;
+   height: 100%;
+   z-index:1001;
+   background-color: rgba(0, 0, 0, .8);
+   background-blend-mode: color-burn;
+}
+
+.lightbox_close {
+   position: relative;
+   top: 20px;
+   left: 90%;
+   color: #fff;
+   font-size: 40px;
+   text-decoration: none;
+   transition: color .2s linear;
+}
+
+.lightbox_close:hover {
+   color: #9a2018;
+}
+
+.heart_svg {
+   position: relative;
+   top: 25vh;
+}
 
 /* 8. ---Footer--- */
 
@@ -440,4 +533,288 @@ input, textarea {
    margin-bottom: 20px;
    line-height: 18px;
    font-size: 11px;
+}
+
+/* ROOMS HTML */
+
+/* 
+    CSS Guide 
+
+    1.  Main Hero Image - Rooms info
+    2.  Shared Amenities
+    3.  Room Options
+*/
+
+
+/* 1. ---Main Hero Image - Rooms info--- */
+
+#rooms-hero {
+   background: url(../images/room-mobl-hero.jpg) no-repeat;
+   height: 200px;
+}
+
+
+#rooms-include {
+   font-size: 11px;
+   background-color: #efefef;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+#rooms-include-title {
+   color: #9a2018;
+   margin-bottom: 20px;
+}
+
+#rooms-include div {
+   margin: 0 60px 20px;
+}
+
+#rooms-include div:hover {
+   transform: scale(1.035);
+}
+
+.fa-solid {
+   font-size: 42px;
+   color: #9a2018;
+   margin: 0 auto;
+   float: left;
+}
+
+.fa-utensils {
+   margin-left: 6px;
+   margin-right: 10px;
+   margin-bottom: 5px;
+}
+
+.fa-hot-tub-person {
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+#rooms-include span {
+   color: #9a2018;
+   font-weight: 600;
+}
+
+
+/* 2. --- Shared Amenities--- */
+
+
+#amenities-con {
+   padding-top: 35px;
+   padding-bottom: 30px;
+}
+
+.amenities-items {
+   margin-bottom: 16px;
+}
+
+.amenities-items h3 {
+   color: #9a2018;
+   padding: 16px 0;
+   font-size: 16px;
+}
+
+.amenities-items ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.amenities-items li {
+   padding: 8px 0;
+   border-bottom: 1px solid #9a2018;
+   color: inherit;
+   font-size: 13px;
+}
+
+.amenities-items li:hover {
+   font-weight: 600;
+}
+
+#amenities-text-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
+/* 3. ---Room Options--- */
+
+
+#room-opt {
+   background-color: #f4f4f4;
+   padding-top: 35px;
+   padding-bottom: 30px;
+}
+
+#room-opt h2 {
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+#room-opt h2 span {
+   color: #9a2018;
+   font-size: 16px;
+}
+
+.room-items {
+   margin-bottom: 16px;
+}
+
+.room-items summary {
+   background: #e8e7e7;
+   padding: 16px;
+   font-size: 16px;
+}
+
+.faq-items li {
+   padding: 8px 0;
+   border-bottom: 1px solid #9a2018;
+}   
+
+
+.room-opt-imgs {
+background-repeat: no-repeat;
+margin-top: 20px;
+padding-bottom: 20px;
+}
+
+.room-items p {
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+
+.room-items a {
+   color: #9a2018;
+   animation: linksize 3s ease-out;
+   font-size: 14px;
+}
+
+.room-items a:hover {
+   font-weight: 600;
+}
+
+.room-items a::after {
+   content: " ▶";
+   font-size: 12px;
+   animation: arrow-anima 1s ease-in-out infinite;
+}
+
+@keyframes arrow-anima {
+   0% {padding-left: 0px;}
+   50% {padding-left: 3px;}
+   100% {padding-left: 0px;}
+}
+
+.room-items summary:hover {
+   font-weight: 600;
+   cursor: pointer;
+}
+
+
+
+/* ROOMS HTML */
+
+/* 
+    CSS Guide 
+
+    1.  Main Hero Image - Rooms info
+    2.  Shared Amenities
+    3.  Room Options
+*/
+
+
+/* 1. ---Main Hero Image - Rooms info--- */
+
+#chateaus-hero {
+   position: relative;
+   display: block;
+   margin: auto;
+   text-align: center;
+   width: 412px;
+}
+
+#chateaus-hero div {
+   width: 412px;
+   height: 340px;
+}
+
+#chateaus-img-box {
+   background-color:#e8e7e7;
+   width: 100%;
+   padding-bottom: 30px;
+   height: 670px;
+}
+
+#chateaus-img-box input[type="radio"] {
+   width: 176px;
+   height: 145px;
+   margin: 5px 10px;
+   display: inline-block;
+   border: none;
+   outline: none;
+   appearance: none;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+   position: relative;
+   top: 356px;
+}
+
+#chateaus-img-box input[type="radio"]:hover {
+   transform: scale(1.02);
+}
+
+.chateaus-img-bg {
+   position: absolute;
+   top: 0;
+}
+
+#chateaus-img-01 {
+   background-image: url(../images/chateau-mobl-mini01.jpg);
+   background-size: cover;
+}
+
+#chateaus-img-02 {
+   background-image: url(../images/chateau-mobl-mini02.jpg);
+   background-size: cover;
+}
+
+#chateaus-img-03 {
+   background-image: url(../images/chateau-mobl-mini03.jpg);
+   background-size: cover;
+}
+
+#chateaus-img-04 {
+   background-image: url(../images/chateau-mobl-mini04.jpg);
+   background-size: cover;
+}
+
+#chateaus-img-01:checked ~ .chateaus-img-bg {
+   background-image: url(../images/chateau-mobl01.jpg);
+   background-size: cover;
+}
+
+#chateaus-img-02:checked ~ .chateaus-img-bg {
+   background-image: url(../images/chateau-mobl02.jpg);
+   background-size: cover;
+}
+
+#chateaus-img-03:checked ~ .chateaus-img-bg {
+   background-image: url(../images/chateau-mobl03.jpg);
+   background-size: cover;
+}
+#chateaus-img-04:checked ~ .chateaus-img-bg {
+   background-image: url(../images/chateau-mobl04.jpg);
+   background-size: cover;
+}
+
+#chateaus-summary p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 16px;
+}
+
+#chateaus-summary p:last-child {
+   margin-bottom: 30px;
 }
