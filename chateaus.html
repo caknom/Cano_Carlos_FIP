@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0cc98798d0.js" crossorigin="anonymous"></script>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Welcome to The Couples Resort</title>
+</head>
+    <body>
+        <h1 class="hidden">Welcome to The Couples Resort</h1>
+        
+        <!-- Main Nav -->
+
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full">
+                <h2 class="hidden">Main Navigation</h2>
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger">
+                <img src="images/burger.svg" alt="hamburger menu icon">
+                </label>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Spa Activites</a></li>                            
+                        <li><a href="#">Reservations</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class="col-span-full">
+                <a href="index.html"><img src="images/couples_resort_logo.svg" alt="Couples Resort Logo"></a>
+            </div>
+        </header>
+            
+        <!-- Main Hero -->
+
+        <section id="chateaus-hero" class="grid-con">
+            <h2 class="hidden">2 Chateaus with a large bush between them</h2>                       
+            <section id="chateaus-img-box" class="col-start-1 col-span-4">
+                <input type="radio" id="chateaus-img-01" name="image" checked>
+                <input type="radio" id="chateaus-img-02" name="image">
+                <input type="radio" id="chateaus-img-03" name="image">
+                <input type="radio" id="chateaus-img-04" name="image">
+                <div class="chateaus-img-bg"></div>
+            </section>
+        </section>
+           
+        <section class="grid-con">
+            <section id="chateaus-summary" class="col-span-full line-separator">
+                <h2 class="hidden">Summary of Chateaus Rooms</h2>
+                <p>Old European Boutique Chateaus and each with a Private Screened in Gazebo, Walkout Balcony and Outdoor Hot Tub to soothe life's pains away while enjoying views of spectacular scenery overlooking sparkling Galeairy Lake onto the romantic forests of Algonquin Park.</p>
+                <p>Travel the World and one will quickly see that it does not get any better than this anywhere.</p>
+                <p>In all 4 seasons, explore the stars from your private Outdoor Hot Tub located on your deck.</p>
+                <p>Towering 16 foot vaulted ceiling and a massive 2 sided stone fireplace between the bedroom and living room.</p>
+                <p>Furnished by Canada's finest furniture store The Art Shoppe of Toronto.</p> 
+            </section>
+        </section>
+            
+        <section id="rooms-include" class="grid-con">
+            <h2 class="col-span-full" id="rooms-include-title">Stay Includes</h2>              
+            <div class="col-span-full">
+                <i class="fa-solid fa-utensils"></i>
+                <p id="room-utensils">
+                    <span>Delectable Dining</span><br>
+                    A gourmet 5-course dinner each evening and a breakfast spread to start your day
+                </p>   
+            </div>
+            <div class="col-span-full">
+                <i class="fa-solid fa-hot-tub-person"></i>
+                <p id="room-hottub">
+                    <span>Unmatched Comfort</span><br>
+                    All rooms exceed 5 Diamond/Star standards, ensuring the ultimate in comfort and relaxation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Shared Amenities -->
+
+        <section id="amenities-con" class="grid-con">
+            <section class="col-span-full amenities-items">
+                <h3>Shared Amenities</h3>
+                <div id="amenities-text-con">
+                    <div id="amenities-list-group">
+                        <ul>
+                            <li>Spacious Lakeside Views</li>
+                            <li>Walkout Balcony or Deck</li>
+                            <li>King-Size Beds</li>
+                            <li>Fibre-Optic Internet (Free Wi-Fi)</li>
+                            <li>Free Netflix</li>
+                            <li>European Shower (2 or more heads)</li>
+                            <li>50-inch Television</li>
+                            <li>2 Bathrobes</li>
+                            <li>Hair Dryer, Cosmetic Mirror</li>
+                            <li>Irons/Ironing Boards</li>
+                            <li>Keurig Coffee Maker with K-Caps</li>
+                            <li>Bar Fridge</li>
+                            <li>Phones with Free Long Distance</li>
+                            <li>Calling</li>
+                            <li>Safes</li>
+                            <li>Alarm Clock</li>
+                            <li>Tap Water from the Pristine</li>
+                            <li>Algonquin Park Aquifer</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Room Options -->
+
+        <section id="room-opt" class="grid-con">
+            <div class="col-span-full">
+                <h2><span>Couples Resort</span><br>Explore Our Luxurious<br> Room Options</h2>
+            </div>
+            <section class="col-span-full room-items line-separator">
+                <details>
+                    <summary>Chateaus - 1400 sq. ft.</summary>
+                    <img src="./images/room-mobl01.jpg" class="room-opt-imgs">
+                    <p>Immerse yourself in ultimate luxury with additional amenities like a private sauna, steam generator shower, bidet, microwave, and a complimentary welcome basket filled with bath products and Illy espresso machine capsules.</p>
+                    <a href="chateaus.html">See details & photos</a>
+                </details>
+            </section>
+            <section class="col-span-full room-items">
+                <details>
+                    <summary>Villas - 1000 sq. ft.</summary>
+                    <img src="./images/room-mobl02.jpg" class="room-opt-imgs">
+                    <p>Experience unparalleled comfort with a private sauna, steam generator shower, bidet, microwave, and Illy espresso machine capsules.</p>
+                    <a href="#">See details & photos</a>
+                </details>
+            </section>
+            <section class="col-span-full room-items">
+                <details>
+                    <summary>Masters - 1000 sq. ft.</summary>
+                    <img src="./images/room-mobl03.jpg" class="room-opt-imgs">
+                    <p>Relax in spacious comfort with a steam generator shower, bidet, and microwave.</p>
+                    <a href="#">See details & photos</a>
+                </details>
+            </section>
+            <section class="col-span-full room-items">
+                <details>
+                    <summary>Chalets - 700 sq. ft.</summary>
+                    <img src="./images/room-mobl04.jpg" class="room-opt-imgs">
+                    <p>Enjoy a cozy cabin experience with a private outdoor hot tub.</p>
+                    <a href="#">See details & photos</a>
+                </details>
+            </section>
+            <section class="col-span-full room-items">
+                <details>
+                    <summary>Exotics - Varies in size</summary>
+                    <img src="./images/room-mobl05.jpg" class="room-opt-imgs">
+                    <p>Choose from a variety of unique spaces, all featuring a private outdoor hot tub and microwave.</p>
+                    <a href="#">See details & photos</a>
+                </details>
+            </section>
+            <section class="col-span-full room-items">
+                <details>
+                    <summary>Juniors - 600 sq. ft.</summary>
+                    <img src="./images/room-mobl06.jpg" class="room-opt-imgs">
+                    <p>Unwind in a comfortable space with a private outdoor hot tub.</p>
+                    <a href="#">See details & photos</a>
+                </details>
+            </section>
+        </section>
+
+        <!-- Contact -->
+
+        <section id="contact-msg" class="grid-con">
+            <div class="col-span-full">
+                <p>Book your all-inclusive escape today and experience unforgettable luxury in the heart of Algonquin Park!</p>
+            </div>
+        </section>
+        
+        <section id="contact-hero-con" class="grid-con">
+            <div id="contact-hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2"><span>Couples Resort</span><br> Contact</h2>
+            </div>
+        </section>
+
+            
+        <section class="grid-con">
+            <h2 class="hidden">Contact Information</h2>
+            <div id="contact-hero-text" class="line-separator col-span-full">
+                <p>Thank you for taking the time to learn more about our resort and why we are Ontario's number one choice for couples looking to reconnect. For reservation enquiries and further information, please complete our contact form below. Or if you prefer to talked call us at our toll free number listed below.</p>
+            </div>
+            <div id="contact-hero-address" class="col-span-full">          
+                <h3>Couples Resort (Inc.)</h3>
+                <p>1198 Osprey Rd, (End of)<br>
+                Minden, Soyers Lake, ON, <br>K0M 2K0</p>
+                <h3 class="hidden">Phone, Fax and Email</h3>
+                <p>Toll Free:+1 877 201-1156<br>
+                    FAX:+1 613 638 2217<br>
+                    E-mail: info[at]coupleresort.com </p>         
+            </div>
+
+            <div id="contact-hero-form" class="col-span-full">
+                <form action="#lightbox1" method="post" enctype="text/plain">
+                    <input name="fullName" type="text" required placeholder="First & Last Name">
+                    <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                    <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </section>
+
+        <footer id="footer-hero" class="grid-con">        
+                <section id="footer-contact-info" class="col-span-full">
+                    <h3>Couples Resort</h3>
+                    <p>1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON, <br>
+                        K0M 2K0
+                    </p>
+                    <p>
+                        Toll Free:+1 877 201-1156<br>
+                        FAX:+1 613 638 2217<br>
+                        E-mail: info@coupleresort.com
+                    </p>
+                </section>
+                <div id="footer-privacy" class="col-span-full line-separator">
+                    <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+                </div>
+        </footer>
+
+        <section class="grid-con lightbox" id="lightbox1">
+            <div id="contact-lb" class="col-start-1 col-end-4">
+                <a href="" class="lightbox_close">X</a>
+                <div class="heart_svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="382" height="400" viewBox="0 0 510 475.326">
+                        <defs>
+                            <filter id="Union_5" x="0" y="0" width="510" height="475.326" filterUnits="userSpaceOnUse">
+                                <feoffset input="SourceAlpha"/>
+                                <fegaussianblur stdDeviation="25" result="blur"/>
+                                <feflood flood-color="#fff" flood-opacity="0.161"/>
+                                <fecomposite operator="in" in2="blur"/>
+                                <fecomposite in="SourceGraphic"/>
+                            </filter>
+                            <filter id="Union_5-2" x="45" y="45" width="420" height="385.326" filterUnits="userSpaceOnUse">
+                                <feoffset input="SourceAlpha"/>
+                                <fegaussianblur stdDeviation="10" result="blur-2"/>
+                                <feflood flood-color="#fff" flood-opacity="0.161"/>
+                                <fecomposite operator="in" in2="blur-2"/>
+                                <fecomposite in="SourceGraphic"/>
+                            </filter>
+                        </defs>
+                        <g id="Group_89" data-name="Group 89" transform="translate(-395 -81)">
+                            <g id="Group_87" data-name="Group 87" transform="translate(470 156)">
+                                <g transform="matrix(1, 0, 0, 1, -75, -75)" filter="url(#Union_5)">
+                                    <path id="Union_5-3" data-name="Union 5" d="M180.723,324.584l-.668.741V324l-145.4-126.8A90.8,90.8,0,1,1,179.39,105.739l.222.067a90.822,90.822,0,1,1,155.828,47.054l.017,0L181.573,323.642v1.684Z" transform="translate(75 75)" fill="#c54242"/>
+                                </g>
+                            </g>
+                            <g id="Group_88" data-name="Group 88" transform="translate(470 156)">
+                                <g transform="matrix(1, 0, 0, 1, -75, -75)" filter="url(#Union_5-2)">
+                                    <path id="Union_5-4" data-name="Union 5" d="M180.723,324.584l-.668.741V324l-145.4-126.8A90.8,90.8,0,1,1,179.39,105.739l.222.067a90.822,90.822,0,1,1,155.828,47.054l.017,0L181.573,323.642v1.684Z" transform="translate(75 75)" fill="#c54242"/>
+                                </g>
+                                <text id="Love_sent_" data-name="Love sent 💕" transform="translate(169.383 171)" fill="#f4f4f4" font-size="25" font-family="Sanchez-Italic, Sanchez" font-style="italic"><tspan x="-78.463" y="0">Love sent </tspan><tspan y="0" font-family="SegoeUIEmoji, Segoe UI Emoji" font-style="normal">💕</tspan></text>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+         
+    </body>
+</html>
