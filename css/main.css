@@ -18,11 +18,13 @@ Couples Resort Responsive Build
 
 /* INDEX.HTML */
 
-* {
-   /* outline: 1px red solid; */
-}
+/* * {
+   outline: 1px red solid;
+} */
+
 
 /* 1. ---General Styles--- */
+
 
  #mobile-outline {
    outline: 20px solid #333;
@@ -57,7 +59,77 @@ input, button, textarea {
    padding-top: 20px;
 }
 
+/*   webpage middle menu   */
+
+#middle-menu-nav {
+   padding-top: 20px;
+}
+
+#middle-menu-nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#middle-menu-nav ul li {
+   margin-bottom: 15px;
+}
+
+#middle-menu-nav ul li a {
+  color: inherit;
+  padding: 5px;
+}
+
+#middle-menu-nav ul li a.selected {
+   border-left: #9a2018 solid 5px;
+ }
+
+#middle-menu-nav ul li a:hover {
+   border-left: #9a2018 solid 5px;
+   transition: all 10ms ease;
+}
+
+/*   webpage lists   */
+
+#hoverlist-con {
+   padding-top: 35px;
+   padding-bottom: 30px;
+}
+
+.hoverlist-items {
+   margin-bottom: 16px;
+}
+
+.hoverlist-items h3 {
+   color: #9a2018;
+   padding: 16px 0;
+   font-size: 16px;
+}
+
+.hoverlist-items ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.hoverlist-items li {
+   padding: 8px 0;
+   border-bottom: 1px solid #9a2018;
+   color: inherit;
+   font-size: 13px;
+}
+
+.hoverlist-items li:hover {
+   font-weight: 600;
+}
+
+#hoverlist-text-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
 /* 2. ---Main Nav--- */
+
 
  #main-nav label img {
    width: 20px;
@@ -202,29 +274,6 @@ header img:hover {
 }
 
 /* 5. ---Why Choose Us--- */
-
- #why-choose-us-nav {
-   padding-top: 20px;
-}
-
-#why-choose-us-nav ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-#why-choose-us-nav ul li {
-   margin-bottom: 15px;
-}
-
-#why-choose-us-nav ul li a {
-  color: inherit;
-  padding: 5px;
-}
-
-#why-choose-us-nav ul li a.selected {
-   border-left: #9a2018 solid 5px;
- }
-
 
 #why-choose-us-hero-con {
   background: url(../images/why-choose-us-hero.jpg) no-repeat;
@@ -502,6 +551,7 @@ header img:hover {
 .heart_svg {
    position: relative;
    top: 25vh;
+   animation: float 2s ease-out infinite;
 }
 
 /* 8. ---Footer--- */
@@ -599,46 +649,6 @@ header img:hover {
 
 
 /* 2. --- Shared Amenities--- */
-
-
-#amenities-con {
-   padding-top: 35px;
-   padding-bottom: 30px;
-}
-
-.amenities-items {
-   margin-bottom: 16px;
-}
-
-.amenities-items h3 {
-   color: #9a2018;
-   padding: 16px 0;
-   font-size: 16px;
-}
-
-.amenities-items ul {
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-}
-
-.amenities-items li {
-   padding: 8px 0;
-   border-bottom: 1px solid #9a2018;
-   color: inherit;
-   font-size: 13px;
-}
-
-.amenities-items li:hover {
-   font-weight: 600;
-}
-
-#amenities-text-con {
-   margin-top: 20px;
-   margin-bottom: 20px;
-}
-
-
 /* 3. ---Room Options--- */
 
 
@@ -689,10 +699,11 @@ padding-bottom: 20px;
    color: #9a2018;
    animation: linksize 3s ease-out;
    font-size: 14px;
+   font-weight: 600;
 }
 
 .room-items a:hover {
-   font-weight: 600;
+   font-size: 14.7px;
 }
 
 .room-items a::after {
@@ -714,18 +725,18 @@ padding-bottom: 20px;
 
 
 
-/* ROOMS HTML */
+/* CHATEAUS HTML */
 
 /* 
     CSS Guide 
 
-    1.  Main Hero Image - Rooms info
-    2.  Shared Amenities
-    3.  Room Options
+    1.  Main Hero Image - Chateaus pictures and info
+    2.  Exclusive to Chateaus
+    3.  webpage menu
 */
 
 
-/* 1. ---Main Hero Image - Rooms info--- */
+/* 1. ---Main Hero Image - Chateaus pictures and info--- */
 
 #chateaus-hero {
    position: relative;
@@ -741,7 +752,7 @@ padding-bottom: 20px;
 }
 
 #chateaus-img-box {
-   background-color:#e8e7e7;
+   background-color:#efefef;
    width: 100%;
    padding-bottom: 30px;
    height: 670px;
@@ -762,7 +773,7 @@ padding-bottom: 20px;
 }
 
 #chateaus-img-box input[type="radio"]:hover {
-   transform: scale(1.02);
+   transform: scale(1.04);
 }
 
 .chateaus-img-bg {
@@ -818,3 +829,34 @@ padding-bottom: 20px;
 #chateaus-summary p:last-child {
    margin-bottom: 30px;
 }
+
+#chantal-blog a {
+   text-align: center;
+   background-color: #9a2018;
+   color: #fff;
+   width: 266px;
+   justify-self: center;
+   padding: 10px;
+   border-radius: 5px;
+   margin: 10px 0 0;
+}
+
+#chantal-blog a:hover {
+   transform: scale(1.03);
+   width: 280px;
+}
+
+/* 2.  ---Exclusive to Chateaus--- */
+
+.middle-menu-bg {
+   background-color:#efefef;
+   padding-bottom: 20px;
+}
+
+#middle-menu-nav h2 {
+   color: #9a2018;
+   padding: 0 0 30px;
+   font-size: 16px;
+}
+
+/* 3.  ---webpage menu--- */
