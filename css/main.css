@@ -90,7 +90,7 @@ input, button, textarea {
 
 /*   webpage lists   */
 
-#hoverlist-con {
+.hoverlist-con {
    padding-top: 35px;
    padding-bottom: 30px;
 }
@@ -732,7 +732,6 @@ padding-bottom: 20px;
 
     1.  Main Hero Image - Chateaus pictures and info
     2.  Exclusive to Chateaus
-    3.  webpage menu
 */
 
 
@@ -838,7 +837,7 @@ padding-bottom: 20px;
    justify-self: center;
    padding: 10px;
    border-radius: 5px;
-   margin: 10px 0 0;
+   margin: 10px 0 30px;
 }
 
 #chantal-blog a:hover {
@@ -859,4 +858,95 @@ padding-bottom: 20px;
    font-size: 16px;
 }
 
-/* 3.  ---webpage menu--- */
+
+/* SPA ACTIVITIES HTML */
+
+/* 
+    CSS Guide 
+
+    1.  Main Hero Image - Chateaus pictures and info
+    2.  Activities
+    3.  Activities Options
+*/
+
+
+/* 1. ---Main Hero Image - Chateaus pictures and info--- */
+
+
+#spa-activities-hero {
+   background: url(../images/spa-act-mobl-hero.jpg) no-repeat;
+   height: 200px;
+   background-position-y: center;
+}
+
+
+/* 2. ---Activities Menu--- */
+
+
+#spa-activities-menu {
+   background-color: #f4f4f4;
+   padding-top: 35px;
+   padding-bottom: 30px;
+   margin-top: 15px;
+}
+
+#spa-activities-menu h2 {
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+#spa-activities-menu h2 span {
+   color: #9a2018;
+   font-size: 16px;
+}
+
+
+/* 3. ---Activities Options--- */
+
+
+#spa-activities-opt {
+   margin: 0 center;
+   padding-top: 40px;
+   padding-bottom: 30px;
+}
+
+.spa-activities-img {
+   background-repeat: no-repeat;
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+.spa-activities-items {
+font-size: 14px;
+padding-bottom: 30px;
+transition: all 0.4 ease-out;
+}
+
+.spa-activities-items h4 {
+   color:#9a2018;
+}
+
+.spa-activities-items p {
+   margin-bottom: 20px;
+}
+
+.spa-activities-items a {
+   text-transform: uppercase;
+   color:#333;
+   font-weight: 600;
+   font-size: 13px;
+}
+
+.spa-activities-items a:hover {
+   font-size: 13.3px;
+   color: #9a2018;
+}
+
+.spa-activities-items summary {
+   color: #9a2018;
+   margin-bottom: 10px;
+}
+
+.spa-activities-items details p {
+   font-size: 13px;
+}
