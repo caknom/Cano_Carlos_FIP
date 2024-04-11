@@ -161,6 +161,21 @@ input, button, textarea {
    margin: 0;
 }
 
+#main-nav ul li details {
+   text-align: center;
+}
+
+#main-nav ul li details a {
+   display: inline-block;
+   color: #626262;
+   transition: background-color 0s;
+   
+}
+
+#main-nav ul li details p a {
+   font-size: 14px
+}
+
 #main-nav ul li a {
    display: block;
    padding: 10px 0 10px 0;
@@ -170,8 +185,8 @@ input, button, textarea {
 }
 
 #main-nav ul li a:hover {
-   background-color: #9a2018;
-   color: #fff;
+   color: #9a2018;
+   font-weight: bold;
 }
 
 #main-nav ul li {
@@ -526,8 +541,8 @@ header img:hover {
    top: 0%;
    left: 50%;
    margin: 0 0 0 -208px;
-   padding: 16px;
-   width: 100%;
+   padding: 0px 47px;
+   width: 412px;
    height: 100%;
    z-index:1001;
    background-color: rgba(0, 0, 0, .8);
@@ -753,8 +768,7 @@ padding-bottom: 20px;
 #chateaus-img-box {
    background-color:#efefef;
    width: 100%;
-   padding-bottom: 30px;
-   height: 670px;
+   padding-bottom: 350px;
 }
 
 #chateaus-img-box input[type="radio"] {
@@ -905,7 +919,6 @@ padding-bottom: 20px;
 
 
 #spa-activities-opt {
-   margin: 0 center;
    padding-top: 40px;
    padding-bottom: 30px;
 }
@@ -919,10 +932,10 @@ padding-bottom: 20px;
 .spa-activities-items {
 font-size: 14px;
 padding-bottom: 30px;
-transition: all 0.4 ease-out;
+transition: all 400ms ease-out;
 }
 
-.spa-activities-items h4 {
+.spa-activities-items h3 {
    color:#9a2018;
 }
 
