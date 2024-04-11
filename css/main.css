@@ -81,7 +81,7 @@ input, button, textarea {
 
 #middle-menu-nav ul li a.selected {
    border-left: #9a2018 solid 5px;
- }
+}
 
 #middle-menu-nav ul li a:hover {
    border-left: #9a2018 solid 5px;
@@ -184,18 +184,29 @@ input, button, textarea {
    transition: background-color 0s;
 }
 
+#main-nav ul li:first-child {
+   border-top: 1px solid #efefef;
+}
+
+#main-nav ul li.selected {
+   border: 2px solid #9a2018;
+}
+
+#main-nav ul li p.selected {
+   border: 2px solid #9a2018;
+}
+
+#main-nav ul li summary.selected {
+   border: 2px solid #9a2018;
+}
+
 #main-nav ul li a:hover {
-   color: #9a2018;
+   color:#9a2018;
    font-weight: bold;
 }
 
 #main-nav ul li {
    border-bottom: 1px solid #efefef;
-}
-
-
-#main-nav ul li:first-child {
-   border-top: 1px solid #efefef;
 }
 
 #main-nav ul li:last-child {
